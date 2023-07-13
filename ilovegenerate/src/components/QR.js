@@ -40,7 +40,13 @@ const QR = () => {
             {isLoading ? (
               <p>Loading...</p>
             ) : (
-              qr && <img className="w-[80%] h-[80%]  mx-auto" src={qr} />
+              qr && (
+                <img
+                  className="w-[80%] h-[80%]  mx-auto"
+                  src={qr}
+                  alt="qrcode"
+                />
+              )
             )}
           </div>
           <Button />
